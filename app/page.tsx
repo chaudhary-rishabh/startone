@@ -9,6 +9,7 @@ import Testimonials from "@/components/landing/testimonials"
 import EmailCTA from "@/components/landing/email-cta"
 import GetConnectedSection from "@/components/landing/get-connected-section"
 import Footer from "@/components/landing/footer"
+import { TestimonialCarousel } from "@/components/landing/testimonial-carousel"
 
 export default function Home() {
   return (
@@ -19,9 +20,9 @@ export default function Home() {
       <DemoSlider />
       <ContentAbout />
       <ContentAbout2 />
-      <FAQ />
-      <Testimonials />
       <GetConnectedSection />
+      <TestimonialCarousel />
+      <FAQ />
       <EmailCTA />
       <Footer />
     </div>
