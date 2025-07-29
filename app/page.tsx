@@ -10,12 +10,14 @@ import EmailCTA from "@/components/landing/email-cta"
 import GetConnectedSection from "@/components/landing/get-connected-section"
 import Footer from "@/components/landing/footer"
 import { TestimonialCarousel } from "@/components/landing/testimonial-carousel"
+import FeaturesSection from "@/components/landing/features-main"
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
       <HeroSection />
+      <FeaturesSection />
       <CTASection />
       <DemoSlider />
       <ContentAbout />
