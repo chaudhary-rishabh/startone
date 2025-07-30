@@ -4,8 +4,8 @@ import { ArrowRight, Mail } from "lucide-react"
 
 export default function EmailCTA() {
   return (
-    <section className="py-20 px-6 bg-gray-900 rounded-t-[300px]">
-      <div className="max-w-4xl bg-gradient-to-br from-indigo-400 via-gray-50 to-white rounded-[40px] p-10 mx-auto text-center">
+    <section className="py-20 px-6 bg-white mx-auto">
+      <div className="max-w-4xl bg-gradient-to-br shadow-2xl shadow-gray-500/30 from-indigo-400 via-gray-50 to-white rounded-[40px] p-10 mx-auto text-center">
         <div className="mb-8">
           <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
             <Mail className="h-8 w-8 text-black" />
