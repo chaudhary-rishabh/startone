@@ -4,6 +4,8 @@ import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import Header from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -21,12 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <style>{`
-html {
-  font-family: ${GeistSans.style.fontFamily};
-  --font-sans: ${GeistSans.variable};
-  --font-mono: ${GeistMono.variable};
-}
+          <style>{`
+            html {
+              font-family: ${GeistSans.style.fontFamily};
+              --font-sans: ${GeistSans.variable};
+              --font-mono: ${GeistMono.variable};
+            }
         `}</style>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
@@ -35,7 +37,11 @@ html {
           rel="stylesheet"
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+          {children}
+        <Footer />
+        </body>
     </html>
   )
 }

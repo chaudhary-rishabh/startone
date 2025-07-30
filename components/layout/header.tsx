@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { ChevronDown, ArrowRight, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -13,7 +14,7 @@ export default function Header() {
         <div className="bg-white/90 backdrop-blur-md border border-gray-200/50 rounded-[20px] shadow-lg shadow-gray-200/20 px-4 md:px-8 py-3 md:py-4 relative">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4 md:space-x-8">
-              <div className="text-xl md:text-2xl font-bold text-gray-900">StartOne</div>
+              <Link href="/" className="text-xl md:text-2xl font-bold text-gray-900">StartOne</Link>
               <nav className="hidden lg:flex items-center space-x-6">
                 <div className="flex items-center space-x-1 text-gray-700 hover:text-gray-900 cursor-pointer transition-colors">
                   <span>For Brands</span>
@@ -31,9 +32,9 @@ export default function Header() {
                 <a href="#" className="text-gray-700 hover:text-gray-900 transition-colors">
                   About
                 </a>
-                <a href="#" className="text-gray-700 hover:text-gray-900 transition-colors">
-                  Careers
-                </a>
+                <Link href="/pricing" className="text-gray-700 hover:text-gray-900 transition-colors">
+                  Pricing
+                </Link>
                 <div className="flex items-center space-x-1 text-gray-700 hover:text-gray-900 cursor-pointer transition-colors">
                   <span>Login</span>
                   <ChevronDown className="h-4 w-4" />
@@ -74,12 +75,11 @@ export default function Header() {
                 >
                   About
                 </a>
-                <a
-                  href="#"
+                <Link href="/pricing"
                   className="block text-gray-700 hover:text-gray-900 transition-colors py-2 px-3 rounded-lg hover:bg-gray-50 hover:shadow-sm hover:shadow-blue-200/20"
                 >
-                  Careers
-                </a>
+                  Pricing
+                </Link>
                 <div className="flex items-center justify-between text-gray-700 hover:text-gray-900 cursor-pointer transition-colors py-2 px-3 rounded-lg hover:bg-gray-50 hover:shadow-sm hover:shadow-blue-200/20">
                   <span>Login</span>
                   <ChevronDown className="h-4 w-4" />
