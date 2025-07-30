@@ -7,6 +7,15 @@
     text-wrap: balance;
   }
 }
+@keyframes shimmer {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(20%);
+  }
+}
+
 
 @layer base {
   :root {
