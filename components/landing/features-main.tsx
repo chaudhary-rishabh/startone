@@ -200,20 +200,6 @@ export default function FeaturesSection() {
           <ChevronLeft className="h-6 w-6 text-gray-600" />
         </button>
 
-        <div className="flex space-x-2">
-          {features.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => handleDotClick(index)}
-              className={cn(
-                "h-3 w-3 rounded-full transition-colors",
-                currentIndex === index ? "bg-purple-500" : "bg-gray-300 hover:bg-gray-400",
-              )}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
-
         <button
           onClick={handleNext}
           className="rounded-full bg-white p-3 shadow-md transition-colors hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2"

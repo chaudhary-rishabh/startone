@@ -21,9 +21,9 @@ export default function Header() {
 
             <div className="flex items-center space-x-4 md:space-x-6">
               <nav className="hidden lg:flex items-center space-x-6">
-                <a href="#" className="text-gray-700 hover:text-gray-900 transition-colors">
+                <Link href="/about" className="text-gray-700 hover:text-gray-900 transition-colors">
                   About
-                </a>
+                </Link>
                 <Link href="/pricing" className="text-gray-700 hover:text-gray-900 transition-colors">
                   Pricing
                 </Link>
@@ -55,12 +55,12 @@ export default function Header() {
           {isMobileMenuOpen && (
             <div className="lg:hidden absolute top-full left-0 right-0 mt-2 bg-white/95 backdrop-blur-md border border-gray-200/50 rounded-[20px] shadow-lg shadow-gray-200/20 p-6 animate-in slide-in-from-top-2">
               <nav className="space-y-4">
-                <a
-                  href="#"
+                <Link
+                  href="/about"
                   className="block text-gray-700 hover:text-gray-900 transition-colors py-2 px-3 rounded-lg hover:bg-gray-50 hover:shadow-sm hover:shadow-blue-200/20"
                 >
                   About
-                </a>
+                </Link>
                 <Link href="/pricing"
                   className="block text-gray-700 hover:text-gray-900 transition-colors py-2 px-3 rounded-lg hover:bg-gray-50 hover:shadow-sm hover:shadow-blue-200/20"
                 >
