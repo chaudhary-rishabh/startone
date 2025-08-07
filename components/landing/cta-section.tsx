@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react"
 interface cta {
   ctaText: string
   name: string
-  companyLogo: string // URL for the company logo
+  companyLogo: string
   rating: number
 }
 

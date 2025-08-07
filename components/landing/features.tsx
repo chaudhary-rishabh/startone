@@ -25,7 +25,7 @@ export const Features = ({
   return (
     <div
       className={cn(
-        "relative w-full h-full rounded-xl shadow-lg overflow-hidden flex flex-col justify-between p-6",
+        "relative sm:w-full w-9/12 h-full rounded-xl shadow-lg overflow-hidden flex flex-col justify-between p-6",
         bgColor,
         textColor,
       )}
@@ -43,7 +43,7 @@ export const Features = ({
         </div>
       )}
       <div className={cn("relative z-10 flex flex-col h-full", type === "image" && "text-white")}>
-        <p className="text-lg font-semibold mb-4 flex-grow">{quote}</p>
+        <p className="md:text-lg text-sm font-semibold mb-4 flex-grow">{quote}</p>
         <div className="flex items-center">
           {type === "text" && avatar && (
             <Image
